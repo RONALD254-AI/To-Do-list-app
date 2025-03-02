@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const password = document.getElementById("password").value;
 
     const endpoint = isSignUp ? "/signup" : "/signin";
-    const response = await fetch(`http://localhost:3000${endpoint}`, {
+    const response = await fetch(`https://sneek-shopping-list-app.onrender.com${endpoint}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
